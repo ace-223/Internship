@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bill Generator | Grocery shopping made easy</title>
+  <link rel="stylesheet" href="ShoppingBillGen.css"> 
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="heading">
+        <h1>Shopping Bill Generator</h1>
+        <p>Change a quantity, then generate the bill. <br>Spend GH₵300 or more and get 10% off.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <table>
+        <thead>
+          <tr class="category-titles">
+            <th class="item">Items</th>
+            <th class="price">Price</th>
+            <th class="qty">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row">
+            <td class="item">K-75 5kg rice</td>
+           <td class="price" data-price="90" >GH₵ 90.00</td>
+           <td class="qty"><input type="number" class="item-quantity" value="1" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">Titus Sardine</td>
+            <td class="price" data-price="14" >GH₵ 14.00</td>
+            <td class="qty"><input type="number" class="item-quantity" value="2" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">Remie Spices</td>
+            <td class="price" data-price="13" >GH₵ 13.00</td>
+            <td class="qty"><input type="number" class="item-quantity" value="2" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">Fabuloso detergent</td>
+            <td class="price" data-price="68" >GH₵ 68.00</td>
+            <td class="qty"><input type="number" class="item-quantity" value="1" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">BB cocktail</td>
+            <td class="price" data-price="12" >GH₵ 12.00</td>
+            <td class="qty"><input type="number" class="item-quantity" value="2" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">Prawn crackers</td>
+            <td class="price" data-price="18.5" >GH₵ 18.50</td>
+            <td class="qty"><input type="number" class="item-quantity" value="1" min="0"></td>
+          </tr>
+          <tr class="row">
+            <td class="item">Jumbo Tissue</td>
+            <td class="price" data-price="34" >GH₵ 34.00</td>
+            <td class="qty"><input type="number" class="item-quantity" value="1" min="0"></td>
+         </tr>
+        </tbody>
+      </table>
+
+      <div class="action-btn">
+        <button id="generate" type="button">Generate bill</button>
+        <button id="reset" type="button">Reset quantities</button>
+      </div>
+  
+      <div id="bill" aria-live="polite"></div>
+    </div>
+    </section>
+  </main>
+  <script src="ShoppingBillGen.js"></script>
+</body>
+</html>
