@@ -1,0 +1,141 @@
+:root {
+  --page-gutter: clamp(20px, 8vw, 250px);
+}
+
+*{
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: black;
+  margin: 0px;
+  padding: 0 65px;
+  color: white;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 26.5px;
+  font-weight: lighter;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 24.5px;
+  font-weight: lighter;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 330px;   
+  margin: 60px auto;
+}
+
+.input-container,
+.continue-btn,
+.google-btn,
+.apple-btn,
+.qr-code-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background 0.2s ease; 
+  align-items: center;
+}
+
+.google-btn:hover{
+  background-color: #e0e0e0;
+}
+
+.apple-btn:hover{
+  background-color: #e0e0e0;
+}
+
+.qr-code-btn:hover{
+  background-color: #f8f8f8;
+}
+
+.top,
+.middle,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container {
+  padding-left: 20px;
+}
+
+.continue-btn {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.continue-btn:hover {
+  background: #1d1d1d;
+}
+
+.divider {
+  display: flex;
+  align-items: center;   
+  gap: 12px;            
+  margin: 16px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.divider hr {
+  flex: 1;               
+  border: none;
+  border-top: 1px solid #333;
+  margin: 0;
+}
+
+p {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.image {
+  padding: 0;
+  padding-right: 5px;
+  margin: 0;
+}
+
+.error-msg {
+  display: none;
+  color: #d0021b;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.input-error {
+  outline: 2px solid #d0021b;
+}
